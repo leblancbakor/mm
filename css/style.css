@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    padding: 100px 0;
 }
 .hero img {
     width: 100%;
@@ -43,7 +43,7 @@ body {
     color: black;
     padding: 10px;
     display: inline-block;
-    margin-top: -40px;
+    margin-top: -340px;
 }
 /* Gallery */
 .gallery {
@@ -51,6 +51,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 40px;
+    padding-top: 240px;
+
 }
 .gallery-item {
     text-align: center;
