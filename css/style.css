@@ -12,7 +12,10 @@
     font-style: normal;
 }
 
-
+html, body {
+    height: 100%; 
+    margin: 0;
+}
 .hero h1 {
     font-family: 'TenorSans', sans-serif;
     background: white;
@@ -31,11 +34,17 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'TenorSans';
+    src: url('/fonts/TenorSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
-/* Sticky Header */
 .header {
     position: sticky;
     top: 0;
@@ -47,6 +56,7 @@ body {
     z-index: 1000;
 }
 .header button {
+    font-family:
     background: white;
     border: none;
     padding: 10px 15px;
@@ -109,5 +119,5 @@ body {
 }
 
 .header a:hover {
-    background: gray; /* Hover effect */
+    background: gray;
 }
