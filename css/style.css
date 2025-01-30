@@ -12,14 +12,12 @@
     font-style: normal;
 }
 
-html, body {
-    height: 100%; 
-<<<<<<< HEAD
-    margin: 0; 
-=======
+html,
+body {
+    height: 100%;
     margin: 0;
->>>>>>> 6ba236e750532919d94497aa2bbf3bf1d1f01362
 }
+
 .hero h1 {
     font-family: 'TenorSans', sans-serif;
     background: white;
@@ -37,6 +35,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'TenorSans';
     src: url('/fonts/TenorSans-Regular.ttf') format('truetype');
@@ -46,7 +45,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 
@@ -64,26 +63,21 @@ body {
     align-items: center;
     z-index: 1000;
 }
-.header button {
-    font-family:
-    background: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 25px;
-}
+
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 50px;
 }
+
 .hero img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
 }
+
 .hero h1 {
     background: white;
     color: black;
@@ -111,10 +105,12 @@ body {
 .gallery-item {
     text-align: center;
 }
+
 .gallery img {
     width: 100%;
     height: auto;
 }
+
 .header a {
     text-decoration: none;
     background: white;
@@ -125,10 +121,180 @@ body {
     cursor: pointer;
     margin-right: 25px;
     display: inline-block;
+    transition: 0.3s ease;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: lightgray;
+}
+
+
+.btn {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+    display: inline-block;
     transition: background 0.3s ease;
 }
 
-.header a:hover {
+
+.btn:hover {
     background: gray;
 }
+
+.active {
+    background-color: gray;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TenorSans';
+    src: url('/fonts/TenorSans-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'TenorSans', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    font-family: 'Archivo', sans-serif;
+    position: sticky;
+    top: 0;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    background: white;
+    color: black;
+    padding: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: -350px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.ticket-box, .event-box, .checkout-box, .info-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.btn {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: gray;
+}
+
 
